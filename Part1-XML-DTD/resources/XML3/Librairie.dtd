@@ -1,0 +1,21 @@
+<!-- Une librarie est composé d'un en-tête et d'au moins 1 livre -->
+<!ELEMENT librairie (en-tête, livre+) >
+    <!ELEMENT en-tête (#PCDATA|em|strong|img) *>
+        <!ELEMENT em (#PCDATA) >
+        <!ELEMENT strong (#PCDATA) >
+        <!ELEMENT img EMPTY >
+            <!ATTLIST img src CDATA #REQUIRED
+                          title CDATA #IMPLIED >
+    <!ELEMENT livre (titre, auteur+, description, prix) >
+        <!ATTLIST livre ISBN NMTOKEN #REQUIRED >
+        <!ELEMENT titre (#PCDATA) >
+        <!ELEMENT auteur ((prenom, nom?)*)|(direction, membres)) >
+            <!ELEMENT prenom (#PCDATA) >
+            <!ELEMENT nom (#PCDATA) >
+            <!ELEMENT direction (nom, prenom?) >
+            <!ELEMENT membres (#PCDATA) >
+        <!ELEMENT description (#PCDATA|em|strong|img) *>
+        <!ELEMENT prix (#PCDATA) >
+            <!ATTLIST prix devise (euros|livre|dollar) "euros"
+                           type (HT|TTC) "HT"
+                           tva CDATA #FIXED "5.5">
