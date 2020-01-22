@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE librairie SYSTEM "Librairie.dtd" >
+
+<librairie>
+    <enTete>
+        Bonjour, Bienvenue dans cette <em>magnifique</em> librairie de
+        <strong>NAUCELLE</strong>, livre à tout prix et pour tous !
+        <img src=""></img>
+        &copyright;
+    </enTete>
+    <livre ISBN="151_151">
+        <titre>Croc-Blanc</titre>
+        <auteur>
+            <nom>London</nom>
+            <prenom>Jack</prenom>
+        </auteur>
+        <description>
+            L'histoire commence à la naissance de
+            Croc-Blanc, un chien-loup. Le roman suit la meute
+            d'où il vient et ses premières semaines de vie sauvage,
+            sa lutte pour la vie : manger ou être mangé. ...
+            Il rencontre d'autres chiens et devient ennemi avec eux,
+            Lip-Lip étant son rival.
+        </description>
+        <prix devise="euros" tva="5.5" type="TTC">150</prix>
+    </livre>
+    <livre ISBN="152-15285">
+        <titre>Influence et Manipulation</titre>
+        <auteur>
+            <nom>CIALDINI</nom>
+            <prenom>Robert</prenom>
+        </auteur>
+        <description>Pourquoi et comment sommes-nous amenés à
+            faire des choses contre notre gré ?
+            Robert Cialdini, docteur en psychologie sociale,
+            livre le résultat de plus de quinze ans de recherches
+            sur les mécanismes et les techniques de persuasion.
+            Dans ce livre, il explique pourquoi certaines
+            personnes sont douées d'un remarquable talent de
+            persuasion et comment il est possible de les battre
+            sur leur propre terrain. Ce document nous dévoile
+            les six secrets psychologiques qui se cachent
+            derrière notre dangereuse tendance à nous laisser
+            influencer, ainsi que les moyens employés par les
+            spécialistes de la persuasion pour les exploiter à
+            notre insu. Il nous apprend à nous en défendre, en
+            tournant ces secrets à notre avantage.  Grâce à ce
+            livre indispensable, vous ne direz plus jamais
+            « Oui », alors que vous pensez « non ».</description>
+        <prix devise="dollar" type="TTC" tva="5.5">800</prix>
+    </livre>
+</librairie>
