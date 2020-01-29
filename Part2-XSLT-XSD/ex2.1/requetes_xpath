@@ -1,0 +1,3 @@
+/films/film/titre ou //film/titre (Moins efficace car // parcours tous les noeuds)
+/films/film[titre='Minority Report']/resume ou //film[titre='Minority Report']/resume
+/films/realisateur[last()]/nom
