@@ -1,3 +1,8 @@
-/films/film/titre ou //film/titre (Moins efficace car // parcours tous les noeuds)
-/films/film[titre='Minority Report']/resume ou //film[titre='Minority Report']/resume
-/films/realisateur[last()]/nom
+1) /films/film/titre ou //film/titre (Moins efficace car // parcours tous les noeuds)
+2) /films/film[titre='Minority Report']/resume ou //film[titre='Minority Report']/resume
+3) /films/realisateur[last()]/nom
+4) /films/film[position()=2]/titre
+5) /films/film/resume/text[contains(., 'mafia')]
+6) /films/film[resume/image/@source]/titre
+7) /films/film[@id_realisateur[contains(., 'real_01')]]/@annee
+8) count(/films/film[@annee = 2003])
