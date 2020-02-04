@@ -14,6 +14,7 @@
                     <tr>
                         <th>Titre</th>
                         <th>Résumé</th>
+                        <th>Realisateur</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,6 +28,12 @@
         <tr>
             <td><xsl:value-of select="titre"/></td>
             <td><xsl:value-of select="resume/text"/></td>
+            <!-- Affichage du nom et prénom du réalisateur -->
+            <td>
+                <!-- Je recupère l'id du réalisateur du film -->
+                <xsl:variable name="real"><xsl:value-of select="film/@id_realisateur"/></xsl:variable>
+                <xsl:value-of select="/realisateur[id_realisateur=$real]/nom"/>
+            </td>
         </tr>
     </xsl:template>
 
