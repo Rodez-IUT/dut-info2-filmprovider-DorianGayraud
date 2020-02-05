@@ -31,8 +31,9 @@
             <!-- Affichage du nom et prénom du réalisateur -->
             <td>
                 <!-- Je recupère l'id du réalisateur du film -->
-                <xsl:variable name="real"><xsl:value-of select="film/@id_realisateur"/></xsl:variable>
-                <xsl:value-of select="/realisateur[id_realisateur=$real]/nom"/>
+                <xsl:variable name="real"><xsl:value-of select="@id_realisateur"/></xsl:variable>
+               <xsl:value-of select="../realisateur[@id_realisateur=$real]/nom"/>&#160;
+                   <xsl:value-of select="../realisateur[@id_realisateur=$real]/prenom"/>
             </td>
         </tr>
     </xsl:template>
