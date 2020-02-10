@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:annotation>
+        <xs:documentation xml:lang="fr">
+            Description des films cinématographique au format XML pour communiquer avec les partenaires
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- Description de la racine principale -->
+    <xs:element name="films">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="film"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Description de l'élément film -->
+    <xs:element name="film">
+         <xs:complexType>
+             <xs:simpleContent>
+                 <xs:attributeGroup ref="attFilm"/>
+             </xs:simpleContent>
+             <xs:sequence>
+                 <xs:element name="titre" type="xs:string"/>
+                 <xs:element name="resume" type="xs:string"/>
+             </xs:sequence>
+         </xs:complexType>
+    </xs:element>
+
+    <!-- Liste d'attribut pour le film -->
+    <xs:attributeGroup name="attFilm">
+        <xs:attribute name="id_film" type="xs:string" use="required"/>
+        <xs:attribute name="id_realisateur" type="xs:string" use="required"/>
+        <xs:attribute name="annee" type="xs:integer" use="required"/>
+    </xs:attributeGroup>
+
+</xs:schema>
