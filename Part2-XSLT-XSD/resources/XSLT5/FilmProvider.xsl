@@ -8,9 +8,7 @@
             </head>
             <body>
                 <h1>Liste des films</h1>
-                    <xsl:sort select="@annee">
-                        <xsl:apply-templates select="film"/>
-                    </xsl:sort>
+                    <xsl:apply-templates select="film"/>
             </body>
         </html>
     </xsl:template>
